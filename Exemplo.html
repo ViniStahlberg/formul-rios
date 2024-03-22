@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1>Formulário Teste</h1>
+    </header>
+    <hr>
+    <main>
+        <!--Elemento form define um formulário html-->
+        <!--Atributo 'action' especifica para onde os dados do formulário serão enviados-->
+        <form action="acao.html" method="post" enctype="multipart/form-data">
+            <!--Método de envio:GET ou POST
+                O atributo 'method' especifica como os dados do formulário serão enviados
+                O metodo GET envia os dados como parâmetros da URL
+                O metodo POST envia os dados no corpo da solicitação HTTP
+            -->
+            <!--Atributo enctype especifica que tipos de dados serão enviados pelo formulário-->
+            <label>Nome: </label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label>Senha: </label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label>Insira sua imagem: </label>
+            <input type="file" name="file" id="file" accept=".png, .jpg, .jpeg" multiple>
+            <br>
+            <label>Selecione sua opção: </label>
+            <input type="radio" name="option1" id="option1" value="1" required>Feminino
+            <input type="radio" name="option1" id="option1" value="2" checked required>Masculino
+            <!--colocar o mesmo name e o mesmo id para fazer uma lista com uma só opção que possa ser selecionada, se mudar poderá ser selecionado mais de uma opção-->
+            <br>
+            <label>Selecione suas disciplinas: </label>
+            <input type="checkbox" name="math" id="math" checked>Matemática
+            <input type="checkbox" name="bio" id="bio">Biologia
+            <input type="checkbox" name="geo" id="geo">Geográfia
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    
+</body>
+</html>

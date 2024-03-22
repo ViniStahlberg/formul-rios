@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Diferentes Elementos</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário com Diferentes Elementos</h1>
+    </header>
+    <main>
+        <form action="acao.html" method="POST" enctype="multipart/form-data">
+            <label>Selecione um ou mais arquivos: </label>
+            <br>
+            <input type="file" name="file" id="file" multiple>
+            <br><br>
+            <hr>
+            <label>Escolha uma opção:</label>
+            <br>
+            <input type="radio" name="op1" id="op1" value="1" checked>opção 1
+            <br>
+            <input type="radio" name="op1" id="op1" value="2">opção 2
+            <br><br>
+            <hr>
+            Checkbox 1:<input type="checkbox" name="check" id="check" checked>
+            <br>
+            Checkbox 2:<input type="checkbox" name="check" id="check">
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+
+    </main>
+    
+</body>
+</html>
